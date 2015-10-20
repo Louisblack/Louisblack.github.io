@@ -9,13 +9,11 @@ layout: page
 
 This is probably my forth attempt at blogging. My last attempt was my longest yet so I am hoping that the upward trend will continue and this one will last a lot longer.
 
-I am a developer and consultant for a small software company in Milton Keynes. I&#8217;m also studying towards my second degree &#8211; Computing at the Open University. I program in Java and Perl.
+I am software engineer who specialises in Java and JavaScript and I'm currently based in Milton Keynes.
 
-In a past life I was a runner at a  Soho based television post production house. Several factors led to me leaving the job and rethinking my life in the media industry. I still have a keen interest in media but I can&#8217;t see myself moving back into it any time soon.
+My main interests are coding, cycling and traveling.
 
-My main interests are technology, films, music, and video games. I&#8217;m a Mac user but dabble in Linux here and there. My (current generation) gaming machines are an XBox 360, PS3,  iPhone 5 and my Macbook Pro.
-
-I have a girlfriend called Jordan and two cats &#8211; Fritz and Sailor
+I have a wife called Jordan, two cats Fritz and Sailor and a smelly dog called Ernest.
 
 [<img class="aligncenter" title="Fritz" alt="" src="http://www.louishoughton.com/wp-content/uploads/2010/02/fritz-small.png" width="274" height="240" />][1]
 
