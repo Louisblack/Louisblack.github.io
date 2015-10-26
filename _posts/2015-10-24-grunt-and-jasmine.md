@@ -27,6 +27,42 @@ I had a go at fixing the issue and submitted a pull [request on GitHub](https://
 
 As my change fixed our issue I wondered if I could point our builds at this patched version of the plugin as a temporary fix. After a bit of Googling I came across [NPM Shrinkwrap](https://docs.npmjs.com/cli/shrinkwrap). This allows you to override version of transitive dependencies of your module. Excellent! I also discovered that you can provide a file path instead of a version number. Doubly excellent! We have a Maven project that contains a bunch of your front end setup stuff like eslint configuration that gets unpacked into the target directory. I added the patched grunt-lib-phantomjs to this project so it'll be downloaded at build time. I then pointed the Shrinkwrap file at this folder and lo and behold it worked.
 
-I'll update this post with the contents of my Shrinkwrap json file on Monday when I'm in the office to better illustrate what I did.
+Here's my Shrinkwrap file. Annoyingly I found I had to define all the dependencies of grunt-contrib-jasmine otherwise they wouldn't be installed. Luckily it lets you omit the other direct dependencies of your project otherwise the file would be pretty big and unwieldy.
 
-So between these two changes I'm hoping I leave this job with some relatively stable front end builds, at least until the move to Gulp where hopefully the Jasmine plugin won't rely on Phantom.js which seems to be a bit of a pain. 
+```
+{
+  "name": "MyProject",
+  "version": "0.1.0",
+  "dependencies": {
+
+    "grunt-contrib-jasmine": {
+      "version": "0.9.2",
+      "from": "grunt-contrib-jasmine@0.9.2",
+      "dependencies": {
+        "grunt-lib-phantomjs": {
+          "version": "Custom",
+          "from": "grunt-lib-phantomjs@>=0.7.1 <0.8.0",
+          "resolved": "./target/patches/grunt-lib-phantomjs"
+        },
+		"chalk": {
+			"version": "1.0.0"
+		},
+		"es5-shim": {
+			"version": "4.0.1"
+		},
+		"jasmine-core": {
+			"version": "2.0.4"
+		},
+		"lodash": {
+			"version": "2.4.1"
+		},
+		"rimraf": {
+			"version": "2.1.4"
+		}
+      }
+    }
+  }
+}
+```
+
+So between these two changes I'm hoping I leave this job with some relatively stable front end builds, at least until the move to Gulp where hopefully the Jasmine plugin won't rely on Phantom.js which seems to be a bit of a pain.
