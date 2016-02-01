@@ -8,7 +8,9 @@ I am software engineer who specialises in Java and JavaScript and I'm currently 
 
 I'm passionate about code quality. I've introduced tools such as Sonarqube and practices such as front end unit testing at companies I've worked at. Check out my code over at [Github](http://www.github.com/louisblack).
 
-I speak about interests like code quality, IoT and other technical topics.   
+I speak about interests like code quality, IoT and other technical topics.
+
+If you want to hire me to help with your project or speak at your event, get in touch at louis${at}louishoughton.com.
 
 My main interests are coding, cycling and traveling.
 
