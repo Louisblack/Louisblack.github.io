@@ -26,6 +26,20 @@
     }
 }
 
+.site-description {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    width: 100%;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+}
+
 .site-nav {
     float: right;
     line-height: 56px;

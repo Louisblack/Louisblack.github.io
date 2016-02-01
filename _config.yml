@@ -1,7 +1,7 @@
 url: http://www.louishoughton.com
-name: Stuff and Things
+baseurl: http://www.louishoughton.com
+title: Stuff and Things
 description: >
-  Murmurings from the mind of Louis
-  Houghton
+  Murmurings from the mind of Louis Houghton
 twitter_username: louisblack
-github_username: louisblack  
+github_username: louisblack
