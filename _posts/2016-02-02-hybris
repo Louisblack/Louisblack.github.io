@@ -12,10 +12,14 @@ tags:
 ---
 For the past three months I've been working on a project that uses the e-commerce platform Hybris. Hybris is basically a pre-built e-commerce web application that a company can customise to fit their own needs. In terms of being able to get a project into production really quickly, it's a great product. For a developer working with it, the experience is less positive.
 
-As the platform is a good few years old it feels like you're basically buying a pre-packaged legacy code base with all the issues that come with it.
+As the platform is a good few years old it feels like you're basically buying a pre-packaged legacy code base with all the issues that come with that.
 
 One of my biggest issues may seem pretty insignificant but over time it becomes a real annoyance. To build the project and run various processes it uses Ant... yes, that build system people used long ago. This means that IDEs have trouble understanding the project structure, basic tasks like running tests require hundreds of lines of XML and you have to run Ant every time you want to compile your code. The last big enterprise application I worked on wasn't perfectly structured but Maven made it a damn sight easier to work with than Hybris.
 
-One of the processes Ant runs when building the project is a load of code generation for both domain classes and DTO classes. These classes are just a load of getters and setters which makes building a rich domain and following good OOP principles impossible. Every bit of logic has to live in services.
+One of the processes Ant runs when building the project is code generation of both domain classes and DTO classes. These classes consist of only getters and setters which makes building a rich domain and following good OOP principles impossible. Every bit of logic has to live in services.
 
-Hybris comes with pre-defined pages for things like the homepage and product pages. As expected for a Java project of this age the pages are JSPs. Personally I think JSPs are the work of the devil and should be ditched as soon as humanly possible. I suppose you could rip out the defaults and replace them with modern templating engine but that would remove the a lot of the advantages of using the out of the box solution.
+Hybris comes with pre-defined pages for things like the homepage and product pages. As expected for a Java project of this age the pages are JSPs. Personally I think JSPs are the work of the devil and should be ditched as soon as humanly possible. I suppose you could rip out the defaults and replace them with a modern templating engine but that would remove a lot of the advantages of using the out of the box solution.
+
+Finally there're the proprietary technologies. Instead of using a standard ORM with a query language that people know, Hybris uses its own 'flexible search' syntax for querying the database. There is also the weird 'impex' syntax for creating database migration scripts. I like learning new things but using precious mental capacity to learn and retain information about technologies only used by Hybris feels like a waste especially when great, open options are available.
+
+I know there are a lot of people that enjoy working with Hybris and are making a lot of money by becoming Hybris experts. I'm definitely not one of them. I feel it kills a lot of the creativity of programming and forces the developer to use tools he just doesn't want to use.
