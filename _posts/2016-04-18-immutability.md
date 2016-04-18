@@ -48,7 +48,9 @@ If we had 10 different parameters to set then you can see how this would be much
 The disadvantage is that it increases the amount of code within the class by quite a lot. Luckily many IDEs have plugins to generate builders automatically so it's pretty quick to do. If you add a property then just delete the builder and regenerate one from scratch.
 
 Here's the class code.
+
 ```java
+
 public class Person {
     private final String name;
     private final int age;
@@ -87,4 +89,5 @@ public class Person {
         }
     }
 }
+
 ```
