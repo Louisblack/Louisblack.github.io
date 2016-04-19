@@ -9,7 +9,7 @@ tags:
   - Programming
   - Java
 ---
-I've recently started working on a new project at my current client that uses Spring MVC to create a REST interface. I've worked with Spring MVC before but not to this extent. The web framework I was using before was completely bespoke. It's JSON handling was done using JSON-lib - a very basic library that hasn't really been looked after. MVC uses Jackson. JSON-lib is a bit like Hibernate in that in requires your classes to have a default constructor and getters and setters for your properties. What inspired me to write this post was the discovery that Jackson is far smarter when deserialising JSON into Java objects. For example we can annotate a constructor...
+I've recently started working on a new project at my current client that uses Spring MVC to create a REST interface. I've worked with Spring MVC before but not to this extent. The web framework I was using before was completely bespoke. It's JSON handling was done using JSON-lib - a very basic library that hasn't really been looked after. MVC uses Jackson. JSON-lib is a bit like Hibernate in that it requires your classes to have a default constructor and getters and setters for your properties. What inspired me to write this post was the discovery that Jackson is far smarter wghen deserialising JSON into Java objects. For example we can annotate a constructor...
 
 ```java
 @JsonCreator
