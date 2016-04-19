@@ -9,7 +9,7 @@ tags:
   - Programming
   - Java
 ---
-I've recently started working on a new project at my current client that uses Spring MVC to create a REST interface. I've worked with Spring MVC before but not to this extent. The web framework I was using before was completely bespoke. It's JSON handling was done using JSON-lib - a very basic library that hasn't really been looked after. MVC uses Jackson. JSON-lib is a bit like Hibernate in that in requires your classes to have a default constructor and getters and setters for your properties. What inspired me to write this post was the discovery that Jackson is far smarter then deserialising JSON into Java objects. For example we can annotate a constructor...
+I've recently started working on a new project at my current client that uses Spring MVC to create a REST interface. I've worked with Spring MVC before but not to this extent. The web framework I was using before was completely bespoke. It's JSON handling was done using JSON-lib - a very basic library that hasn't really been looked after. MVC uses Jackson. JSON-lib is a bit like Hibernate in that in requires your classes to have a default constructor and getters and setters for your properties. What inspired me to write this post was the discovery that Jackson is far smarter when deserialising JSON into Java objects. For example we can annotate a constructor...
 
 ```java
 @JsonCreator
@@ -29,7 +29,7 @@ Immutability simplifies threading. An immutable class is inherently thread safe.
 
 [The garbage collector loves immutable objects](http://blog.takipi.com/5-tips-for-reducing-your-java-garbage-collection-overhead/) as they are far more predictable in terms of generations. All objects within the immutable object must have been created before its construction was completed.
 
-Obviously not every object can be immutable otherwise our applications wouldn't do much but we should also favour immutability until the point at which we absolutely need to start editing state. Mutability should never be the default so thing twice before generating setters for all of your properties.
+Obviously not every object can be immutable otherwise our applications wouldn't do much but we should always favour immutability until the point at which we absolutely need to start editing state. Mutability should never be the default so think twice before generating setters for all of your properties.
 
 Before I finish I wanted to quickly go back to the builder pattern I mentioned earlier. This is probably my favourite design pattern (having a favourite design pattern is a bit sad I know). If we have a class with lots of properties then we don't particularly want a constructor with 10 or so parameters. It's ugly and easy to screw up when calling it.
 
