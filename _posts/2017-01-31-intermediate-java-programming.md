@@ -18,6 +18,7 @@ with progress. Here I'll try and put down some thoughts on how to learn the basi
 move on to building proper applications.
 
 #### Learn the basics
+
 It's never been better to learn a programming language. There are several great websites 
 that allow you to complete interactive tutorials by typing code into a website. There's
 no need to install anything or set up a development environment which is a massive 
