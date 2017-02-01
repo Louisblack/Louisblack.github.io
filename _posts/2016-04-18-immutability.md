@@ -66,7 +66,7 @@ public class Person {
         return new PersonBuilder
     }
 
-    public class PersonBuilder {
+    public static class PersonBuilder {
         private String name;
         private int age;
 
