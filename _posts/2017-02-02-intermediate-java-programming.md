@@ -1,8 +1,8 @@
 ---
 title: Beyond the Basics of Java
-author: louis
+author: Louis
 layout: post
-permalink: /2016/04/beyond-the-basics
+permalink: /2017/02/beyond-the-basics
 categories:
   - Programming
 tags:
