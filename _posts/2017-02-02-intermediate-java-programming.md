@@ -17,7 +17,7 @@ stop learning if you want to be a good developer, it does start getting easier t
 with progress. Here I'll try and put down some thoughts on how to learn the basics and 
 move on to building proper applications.
 
-***Learn the basics***
+***Learn the Basics***
 
 It's never been better to learn a programming language. There are several great websites 
 that allow you to complete interactive tutorials by typing code into a website. There's
