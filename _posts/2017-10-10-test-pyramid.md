@@ -34,7 +34,7 @@ This might be a controversial opinion for many Java developers who have grown up
 
 Unit tests are super useful but they're not enough on their own. Just because two components work independently it doesn't mean that they'll work properly when interacting with one another.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">2 unit tests. 0 integration tests. <a href="https://twitter.com/hashtag/programming?src=hash&amp;ref_src=twsrc%5Etfw">#programming</a><a href="https://t.co/sl0fhiIk6t">https://t.co/sl0fhiIk6t</a> <a href="https://t.co/QQUpFtiCUc">pic.twitter.com/QQUpFtiCUc</a></p>&mdash; Randy Olson (@randal_olson) <a href="https://twitter.com/randal_olson/status/691287668647419904?ref_src=twsrc%5Etfw">January 24, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">2 unit tests. 0 integration tests. <a href="https://twitter.com/hashtag/programming?src=hash&amp;ref_src=twsrc%5Etfw">#programming</a><a href="https://t.co/sl0fhiIk6t">https://t.co/sl0fhiIk6t</a> <a href="https://t.co/QQUpFtiCUc">pic.twitter.com/QQUpFtiCUc</a></p>&mdash; Randy Olson (@randal_olson) <a href="https://twitter.com/randal_olson/status/691287668647419904?ref_src=twsrc%5Etfw">January 24, 2016</a></blockquote>
 
 
 Integration tests can be difficult to define. The name can refer to tests that test the interaction between two classes, an entire microservice or two microservices. If we were developing an application with Spring Boot an integration test might use `SpringRunner.class` and the `@SpringBootTest` annotation to bring up the application context with all the beans and fire off web requests to a `MockMvc` instance.
